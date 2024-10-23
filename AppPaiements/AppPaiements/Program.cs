@@ -15,5 +15,12 @@ internal class Program
         cartecredit3.AfficherDetails();
 
 
+        Paypal paypal1 = new Paypal(78, "subscription spotify", "ydriss@gmail.com");
+        Paypal paypal2 = new Paypal(15, "subscription netflix", "ydriss@gmail.com");
+        Paypal paypal3 = new Paypal(78, "subscription amazon", "ydriss@gmail.com");
+
+        paypal1.AfficherDetails();
+        paypal2.AfficherDetails();
+        paypal3.AfficherDetails();
     }
 }
