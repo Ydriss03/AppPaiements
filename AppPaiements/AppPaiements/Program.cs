@@ -6,9 +6,9 @@ internal class Program
     {
         Console.WriteLine("Hello, World!");
 
-        CarteCredit cartecredit1 = new CarteCredit (50 , "food", 0965);
-        CarteCredit cartecredit2 = new CarteCredit(50, "transport", 0965);
-        CarteCredit cartecredit3 = new CarteCredit(50, "shopping", 0965);
+        CarteCredit cartecredit1 = new CarteCredit (50 , "food", 3965);
+        CarteCredit cartecredit2 = new CarteCredit(50, "transport", 3965);
+        CarteCredit cartecredit3 = new CarteCredit(50, "shopping", 3965);
 
         cartecredit1.AfficherDetails();
         cartecredit2.AfficherDetails();
@@ -22,5 +22,16 @@ internal class Program
         paypal1.AfficherDetails();
         paypal2.AfficherDetails();
         paypal3.AfficherDetails();
+
+
+        Utilisateur utilisateur1 = new Utilisateur("ydriss");
+
+        utilisateur1.AjouterPaiement( paypal1);
+        utilisateur1.AjouterPaiement( cartecredit1);
+        utilisateur1.AfficherInfos();
+
+
+
+
     }
 }
